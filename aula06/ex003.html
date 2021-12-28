@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progrma em JS</title>
+    <style>
+        body {
+         background-color: rgb(128, 128, 133);
+         color: white; /* É assim que se faz um comentario em CSS */
+         font: normal 15pt century gothic;
+        }
+        h1 {
+            color: rgb(46, 46, 46);
+        }
+        h2 {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro programa em JS</h1> <!-- É assim que faz um comentario em HTML-->
+    <h2>Esta é a parte de conteúdo, e toda parte de conteúdo estara sempre em HTML</h2>
+    <p>A parte de estilo é configurado na parte do HEAD, colocando em os dois HEAD uma tag Style.Esta é a parte de estilo pra deixr tudo mais bonitinho.</p>
+    <p>Dentro da tag style vai pra uma nova tecnologia o CSS</p>
+    <P>Em CSS todo final de marcação em um ponto e virgula</P>
+    <p>Dentro de style criar uma tag body, que vai dizer pro programa que tudo que estiver dentro do body, vai receber as configurações que estamos programando pra ele.</p>
+    <p>Para alterar a cor de fundo como background-color e dar enter ja vai aparecer as principais cores, se desejar alterar pode só parar o mouse em cima que vai abrir um painel de cores.</p>
+    <p>O comando color dentro do body vai alterar a cor da letra</p>
+    <p>Terminada a parte de estilo que pode ser colocada em uma pasta separada. Vamos para a parte de interiração.</p>
+    <p> Dentro body, não no head, mas dentro do prórpio body mesmo. Antes do último body</p>
+    <p>Pra que os scrits sejam carregados depois do body. Comandos em JS são em letras minusculas</p>
+    <script>
+       //window.alert('Meu porimeiro programa em JS')
+       /* alert('posso escrever apenas alert') // janela com alerta
+       window.confirm('Quer aguardar mais coisas que vou desenvolver?') // janela com borão OK e Cancelar..*/
+      /*  var apre = window.prompt('Qual liguagem de programação vc está aprendendo?') // vai perguntar a sugestão
+        window.alert('Vamos desenvolver mais material em ' + apre + ' para seus estudos.' ) // este + tem a função de contatenação */
+        // Documentar sempre usadno comentarios podemos usar o 
+    // Ele serve para colocar um comentario em uma unica linha, tuo que é escrito depois do // é considerado um comentario
+    //ou /* para iniciar o comentario e */ //para encerrar o comentario delimitando os espaço do ocmentario.  
+
+    //Este tipo de comentario só funciona dentro do script 
+       // é uma forma tambem de depurar (testa) o que vc esta fazendo por partes. 
+            //tambem podemos usar o // após o comanto pra esplicar o que ele esta fazendo 
+
+         var n1 = Number( window.prompt('Digite um número: ') )// String
+        var n2 = Number(window.prompt('Digite outro número: ') )// String
+        var s = n1+n2 // para converter pára numero number.parseInt(n) ou para numero reais number.parseFloat(n), ainda tem o Number(n) que o proprio JS converte se é interio ou real, mas as vezes precisamos da informação se é inteiro ou real ai podemos usar as anteriores
+        
+        /*window.alert('A soma dos dois valores é ' + String(s) )*/
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Template string
+        // (number + number) é adição 
+        // (string + String) é concatenação 
+        // O comando prompt retornar uma string
+
+        // Conversão de número pra String: String(n) ou o que eu quero converte . toStreing() Ex: n.toString()
+//Template string
+        // `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+         
+    </script>
+        <p>Em JS apenmas um = é recebe
+        null é que ninguem vai poder colocar nela nada dentro </p>
+        
+        <h2>No JS posso usar "aspa duplas" 'aspas simples' e `até a crase` delimitando um String dentro do JS</h2> 
+
+        <h1>Nome das variaveis são identificadores.</h1>  
+        <h2>Regras pra criar a variacveis </h2>
+        <p> 1 -  pode começar com uma letra n1 n2 n3 
+             pode começar com um $    
+             pode começar com _ underline
+        2- Não pode começar com números
+        3 - É possível mesclar letras e numeros
+        4 - Pode usar acentos (média1, média2) ou simbolos
+        5 - Não podem conter espaços
+        6 - Não pode usar palavras reservadas (aquelas que o JS já usa pra comandos) Ex: alert <p>
+
+    <h2>Dicas para criação de nomes de variaveis: <h2>
+       <p>1 - Maiusculas e minisculas fazem diferença
+        2 - Tente usar nomes coerentes para as variaveis 
+        3 - Eviar ser um programados "alfabeto' ou 'programados contador' que as variaveis são abcdefg, ou a1 a2 a3 a4 <p>
+
+    <h1> Variaveis são para guardar dados, nomes, numeros: <h1>
+    <h2> Estes são apenas três tipos de variaveis primitivos <h2>
+       <h3>Numbers em JS:  <h3>
+          <p> Tem dois valores dentro dele importantes: <p>
+         </h3> Infinity: </h3>
+         </h3> NaN: Not an Number </h3>
+            </p> Interios: são sem virgula nos numeros Ex 5, 18 , -12 
+            Reais : são os que tem separação por ponto. Ex 0.5, -15.9, 3.14, 8.0 </p>
+       </h2> Strings: </h2>
+           </p> Pode ser nomes, ou cadeias de numeros, como telefone cpf, por que eles tem ponto tem traços, eles nao sao numericos, são strings </p>
+       </h2> Boolean: </h2>
+           </p> True e False</p>
+        </h2> null </h2>
+       </h2> undefined </h2>
+        </h2>object </h2>
+           </p> array que é um vetor </p>
+        </h2>function </h2>
+
+        <h1>Para saber os tipos de variaveis em JS usar o comando typeof</h1>
+
+        <h1> Mnipulação de dados</h1>
+        
+<h1>Template String</h1>
+<h2>` Estou aprendo ${s} </h2>
+<p>Neste caso aqui temos que usar a crase colocar o que eu quero dizer entra as crase, este simbolo que chamada de playsRoder</p>
+
+<p>Posso usar ainda nome da variavel.length para saber qauntos caracteres a string tem</p>
+<p> posso usar nomve da variavel.toUpperCase() pra transformar TODO EM MAISCULO</p>
+<P>Para tornar todas minusculas usar o comando noemVariavel.toLowerCase()</P>
+
+
+
+</body>
+</html>
