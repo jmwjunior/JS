@@ -8,7 +8,7 @@
     <style>
         body {
          background-color: rgb(128, 128, 133);
-         color: white;
+         color: white; /* É assim que se faz um comentario em CSS */
          font: normal 15pt century gothic;
         }
         h1 {
@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-    <h1>Primeiro programa em JS</h1>
+    <h1>Primeiro programa em JS</h1> <!-- É assim que faz um comentario em HTML-->
     <h2>Esta é a parte de conteúdo, e toda parte de conteúdo estara sempre em HTML</h2>
     <p>A parte de estilo é configurado na parte do HEAD, colocando em os dois HEAD uma tag Style.Esta é a parte de estilo pra deixr tudo mais bonitinho.</p>
     <p>Dentro da tag style vai pra uma nova tecnologia o CSS</p>
@@ -33,9 +33,10 @@
     <p>Pra que os scrits sejam carregados depois do body. Comandos em JS são em letras minusculas</p>
     <script>
        //window.alert('Meu porimeiro programa em JS')
-        alert('posso escrever apenas alert') // janela com alerta
-       window.confirm('Quer aguardar mais coisas que vou desenvolver?') // janela com borão OK e Cancelar..
-        window.prompt('Qual sua sugestão?') // vai perguntar a sugestão
+       /* alert('posso escrever apenas alert') // janela com alerta
+       window.confirm('Quer aguardar mais coisas que vou desenvolver?') // janela com borão OK e Cancelar..*/
+        var apre = window.prompt('Qual liguagem de programação vc está aprendendo?') // vai perguntar a sugestão
+        window.alert('Vamos desenvolver mais material em ' + apre + ' para seus estudos.' ) // este + tem a função de contatenação
         // Documentar sempre usadno comentarios podemos usar o 
     // Ele serve para colocar um comentario em uma unica linha, tuo que é escrito depois do // é considerado um comentario
     //ou /* para iniciar o comentario e */ //para encerrar o comentario delimitando os espaço do ocmentario.  
