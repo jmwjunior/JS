@@ -20,7 +20,26 @@ body{
         document.write(`Olá <strong>${nome} </strong>! Seu nome tem ${nome.length} letras. <br/>`) // write escreve na tela o writeln pula pra linha de baixo
         document.write(`Seu nome em letras maíusculas é ${nome.toUpperCase()}<br/>`)
         document.write(`Seu nome em letras minúsculas é ${nome.toLocaleLowerCase()}`)
+     
     </script>
-    
+    <h1>toFixed é um método interno de todos os numbers</h1>
+        <h2> // Formatar numeros usar o nomeDaVariavel.toFixed(dentro aqui é quandtas casas decimais eu quero deois da virgula, ou se deixar vazio eel retira o numero após o pontoe arredonda para cima )</h2>    
+        <p>n1 = 1545.5 <br/>
+            n1.toFixed(2) <br/>
+            1545.50
+            n1.toFixed()
+            1546
+            </p>
+            <h1>Para trocar  o ponto por uma virgula </h1>
+            <p>> n1.toFixed(2).replace('.',',') <br/>
+                '1545,50'</p>
+    <h1>Como mostrar o salario de alguem em reais</h1>
+    <h2>toLocaleString: vai pegar uma string local</h2>
+    <p>currency é dinheiro, então eu quero no stilo de dinheri o do brasil</p>
+    <p>> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) <br/> 
+        'R$ 1.545,50' </p>
+    <h2>Se eu quiser em dolar ou euro</h2>
+        <p>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})</p>
+        <p>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})</p>
 </body>
 </html>
