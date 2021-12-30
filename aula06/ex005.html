@@ -21,8 +21,11 @@
     <div>Clique aqui </div>
 
     <script>
-        var p1 = window.document.getElementsByName('p')[0]
-        window.document.write(p1.immerText)
+        var p1 = document.getElementsByTagName('p')[0]
+        var p2 = document.getElementsByTagName('p')[1]
+            window.document.write('A primeira vez está em cinza já que abaixo coloquei .style e designei a cor. <br/> E agora estou replicando ele aqui: ' + p1.innerText)
+            p1.style.color = 'gray'
+            window.document.write('<br/>Agora replicando o segundo paragrafo ' + p2.innerText)
       
     </script>
 </body>
