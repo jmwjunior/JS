@@ -18,14 +18,23 @@
     <h1>Estudos com DOM em JS </h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JS </p>
-    <div>Clique aqui </div>
+    <div id='msg'>Clique aqui </div> <!--Criada uma ID --> 
 
     <script>
+        var corpo = document.body // Defini a variavel
         var p1 = document.getElementsByTagName('p')[0]
         var p2 = document.getElementsByTagName('p')[1]
             window.document.write('A primeira vez está em cinza já que abaixo coloquei .style e designei a cor. <br/> E agora estou replicando ele aqui: ' + p1.innerText)
+            corpo.style.background = 'black' // usando a variavel pra alterar stilos
             p1.style.color = 'gray'
-            window.document.write('<br/>Agora replicando o segundo paragrafo ' + p2.innerText)
+            window.document.write('<br/>Agora replicando o segundo paragrafo ' + p2.innerText) // o .innerText pega o texto sem a herança
+            window.document.write('<br/>Mostrando em <strong>HTML</strong> ' + p2.innerHTML + 'com o negrito') // O .innerHTML traz com a herança
+            var d = document.getElementById('msg') // Define ela numa variavel
+            d.style.background = 'red' // posso usar ela pra fazer alterações
+            d.innerText  = 'Alterei o texto dentro do d'
+            // outro modo de trocar o que esta em 'msg', aqui abaixo o cod completo se for usado apenas uma vez, abaixo é:
+            window.document.getElementById('msg').innerText = 'Novamente alterado'
+            
       
     </script>
 </body>
