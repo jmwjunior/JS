@@ -19,6 +19,8 @@
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JS </p>
     <div id='msg'>Clique aqui </div> <!--Criada uma ID --> 
+    <div name = 'text'>Aqui vc pode clicar </div>
+    <div class = 'class'>Opção de alteração</div>
 
     <script>
         var corpo = document.body // Defini a variavel
@@ -34,6 +36,16 @@
             d.innerText  = 'Alterei o texto dentro do d'
             // outro modo de trocar o que esta em 'msg', aqui abaixo o cod completo se for usado apenas uma vez, abaixo é:
             window.document.getElementById('msg').innerText = 'Novamente alterado'
+            var d1 = document.getElementsByName('text')[0]
+            d1.innerText = 'Não clique aqui'
+            var d2 = document.getElementsByClassName('class')[0]
+            d2.style.background = 'white'
+            d2.style.color = 'green'
+            // toda div é representado por uma headtag(#)
+            // toda classe é representada por um ponto (.)
+            //querySelector são para altereçoes mais rapids no trabalho
+            var d = document.querySelector('div#msg')
+            d.style.color = 'gray'
             
       
     </script>
