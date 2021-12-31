@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu país de nascimento</title>
+</head>
+<body>
+    <h1>País de origem</h1>
+    Em que país você nasceu: <input type="text" name="txtvel" id="txtvel"> 
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id = 'res'>
+
+    </div>
+    <script>
+        function verificar(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var pais1 = txtvel.value // aqui ele vai pegar o valor que foi colocar dentro da variavel dentro da caixa de texto
+            pais = pais1.toLowerCase()
+            res.innerHTML = `<p>Você nasceu no <strong>${pais1}</strong>.</p>`
+            if (pais =='brasil') {
+                res.innerHTML += '<p>Você é <strong>brasileiro</strong>.</P>  '// se nao colocar aqui o += ele vai apagar as outras mensagens 
+            } else {
+            res.innerHTML += `<p>Você é estrangeiro.</p>` // Colocanod o += ele cai contatenar as frases 
+            }
+
+        }
+    </script>
+</body>
+</html>
