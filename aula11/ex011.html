@@ -5,11 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qual seu país de nascimento</title>
+    <style>
+        body {
+            background: black;
+            font: normal 14pt century gothic;
+            color: white;
+
+
+        }
+        input#txtvel {
+            font: bold 14pt arial;
+            width: 150px;
+            background-color: rgb(44, 44, 165);
+            color: white;
+            width: 85px;
+            height: 25px;
+            line-height: auto;
+            text-align: center;
+        }
+        input#botao {
+            font: bold 14pt arial;
+            width: 150px;
+            background-color: rgb(62, 62, 219);
+            color: white;
+            width: 90px;
+            height: 25px;
+            line-height: auto;
+            text-align: center;
+        }
+        div#res {
+            margin-top: 20px;
+            
+        }
+    </style>
 </head>
 <body>
     <h1>País de origem</h1>
     Em que país você nasceu: <input type="text" name="txtvel" id="txtvel"> 
-    <input type="button" value="Verificar" onclick="verificar()">
+    <input type="button" value="Verificar" id="botao" onclick="verificar()">
     <div id = 'res'>
 
     </div>
