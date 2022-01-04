@@ -45,7 +45,7 @@ function verificar() {
                         }
         }
         res.style.textAling = 'center'
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos `
+        res.innerHTML = `Contando: ${} com ${idade} anos `
         res.appendChild(img)
 
     }
