@@ -4,31 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de passos</title>
+    <title>Contar passos</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Contando os passos</h1>
     </header>
-    <section> 
-        <div>
-            <p>Inicio:
-            <input type="number" name="txtinicio" id="txtinicio">
-            </p>
-            <p> Fim:
-                <input type="number" name="txtfim" id="txtfim">
-            </p>
-            <p>Passo:
+    <section>
+        <div id = 'dados'>
+            Inicio:<input type="number" name="txtinicio" id="txtinicio">
+
+            <P> Fim: <input type="number" name="txtfim" id="txtfim"></p>
+            <P>Passo:
                 <input type="number" name="txtpasso" id="txtpasso">
-            </p>
-            <p>
-                <input type="button" value="Contar" onclick="contar()">
-            </p>
+            </P>
+            <p><input type="button" value="Contar" onclick="contar()"></P>
             
         </div>
-        <div id = 'res'>
-            Preparando a contagem...
+        <div id ='res'>
+            Preencha os dados acima para ver o resultado
         </div>
     </section>
     <footer>
