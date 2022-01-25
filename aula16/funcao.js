@@ -5,5 +5,4 @@ function parimpar(n){
         return 'É impar'
     }
 }
-
-console.log(parimpar(25)) /* Serve para pedir pra mostrar o resoltado desta função*/
+console.log(parimpar(25)) /* Serve para pedir pra mostrar o resoltado desta função*/ 
