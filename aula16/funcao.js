@@ -1,8 +1,9 @@
-function parimpar(n){
-    if(n%2==0){
-        return 'É par!'
-    }else{
-        return 'É impar'
-    }
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
+
+
+function adicionar() {
+
 }
-console.log(parimpar(25)) /* Serve para pedir pra mostrar o resoltado desta função*/ 
