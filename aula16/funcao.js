@@ -3,7 +3,7 @@ let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
 let valores = []
 
-function isNumuero(n) {
+function isNumero(n) {
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -21,7 +21,7 @@ function inlista(n, l) {
 }
 
 function adicionar() {
-    if(isNumuero(num.value) && !inlista(num.value, valores) ) {
+    if(isNumero(num.value) && !inlista(num.value, valores) ) {
             window.alert('Tudo Ok')
     } else {
         window.alert('Valor inválido  ou já encontrado na lista')
